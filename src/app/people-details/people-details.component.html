@@ -1,1 +1,12 @@
 <p>people-details works!</p>
+
+<button (click)="goBack()">
+   << Voltar</button>
+
+      <div *ngIf="person">
+         <h2>{{ person.name | uppercase }} Details</h2>
+         <div><span>age: </span>{{ person.age }}</div>
+         <div><span>city: </span>{{ person.city }}</div>
+         <div><span>state: </span>{{ person.state }}</div>
+         <div><span>occupation: </span>{{ person.occupation }}</div>
+      </div>
